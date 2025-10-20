@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SeoulMart | Korean Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">SeoulMart</h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <button id="modeToggle" class="mode-btn" title="Toggle Mode">🌙</button>
+        <button id="cartBtn" class="cart-btn" title="View Cart">🛒</button>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Welcome to <span>SeoulMart</span></h2>
+      <p>Your favorite Korean products delivered right to your door.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Best Sellers</h2>
+    <div class="product-grid">
+      <div class="product-card" data-name="Samyang Hot Chicken Ramen" data-price="120">
+        <img src="https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-korean-food-collection-ramyeon-png-image_11670715.png" alt="Ramyeon" />
+        <h3>Samyang Hot Chicken Ramen</h3>
+        <p>₱120.00</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-name="Orion Choco Pie" data-price="200">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98t-lpwgdgml21paa5" alt="Choco Pie" />
+        <h3>Orion Choco Pie</h3>
+        <p>₱200.00</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-name="Binggrae Banana Milk" data-price="85">
+        <img src="https://i5.walmartimages.com/seo/Banana-Flavored-Milk-Korea-s-No-1-Classic-Original-Banana-Milk-Sweet-Smooth-Creamy-Texture-Pack-of-24_43f8d0e9-8ba7-477e-a9a5-42f9219c6cbf.ad26bd426a2db595f4dcde13bf8c571b.jpeg" alt="Banana Milk" />
+        <h3>Binggrae Banana Milk</h3>
+        <p>₱85.00</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="#about" id="about">
+        <div>
+            <h1 class="heading"><span> About </span> Us </h1>
+        </div>
+</section>
+
+    <section class="#about" id="about">
+        <div class="row">
+            
+            <div class="image-container">
+               <img src="cabrera.jpg" alt="photo">
+            </div>
+
+            <div class="content">
+                <h3> Why Choose Us?</h3>
+                <p>Welcome to SeoulMart!💐<br>
+                   Like the slow, meaningful process of making kimchi, every shelf here is stocked with intention. You won't just find general essentials; you'll discover the gochujang with the perfect kick, the crispy seaweed that melts in your mouth, and the unique Korean convenience drinks you crave.
+
+It's a small place, blooming with ramyeon, oppa, and the simple joy of finding a delicious, authentic fix for your craving—all right around the corner. 💗<br>
+                </p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <form id="contactForm">
+        <div class="input-group">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <input type="text" placeholder="Your Contact Number" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="formMsg"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SeoulMart | All Rights Reserved</p>
+  </footer>
+
+  <div id="cartPanel" class="cart-panel">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart" class="close-cart">✖</button>
+    </div>
+    <ul id="cartItems" class="cart-items"></ul>
+    <div class="cart-footer">
+      <p id="cartTotal">Total: ₱0</p>
+      <button id="clearCart">Clear Cart</button>
+      <button id="checkout">Checkout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
